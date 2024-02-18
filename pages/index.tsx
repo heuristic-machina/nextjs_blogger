@@ -47,6 +47,10 @@ const Blog: React.FC<Props> = (props) => {
           box-shadow: 1px 1px 3px #aaa;
         }
 
+        h1 {
+          color: #00bfff
+        }
+
         .post + .post {
           margin-top: 2rem;
         }
