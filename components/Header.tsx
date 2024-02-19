@@ -41,7 +41,7 @@ const Header: React.FC = () => {
 
   let right = null;
 
-  if (status === 'loading') {
+  if ('loading') {
     left = (
       <div className="left">
         <Link href="/">
@@ -56,12 +56,12 @@ const Header: React.FC = () => {
 
           a {
             text-decoration: none;
-            color: var(--geist-foreground);
+            color: #ff9900;
             display: inline-block;
           }
 
           .left a[data-active='true'] {
-            color: gray;
+            color: #ff9900;
           }
 
           a + a {
@@ -72,10 +72,11 @@ const Header: React.FC = () => {
     );
     right = (
       <div className="right">
-        <p>Validating session ...</p>
+        <p>Validating session</p>
         <style jsx>{`
           .right {
             margin-left: auto;
+            color: #ff9900;
           }
         `}</style>
       </div>
